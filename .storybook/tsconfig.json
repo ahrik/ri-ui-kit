@@ -1,0 +1,5 @@
+{
+  "compilerOptions": {
+    "types": ["storybook__react"]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "ri-ui-kit",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Ri custom UI Kit",
   "main": "dist/ri-ui-kit.umd.js",
   "module": "dist/ri-ui-kit.es.js",

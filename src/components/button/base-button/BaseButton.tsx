@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, CSSProperties, PropsWithChildren } from 'react';
 import clsx from 'clsx';
-import { BUTTON_SIZES, ButtonSize } from './types';
+import { BUTTON_SIZES, ButtonSize } from '../types';
 
 import styles from './baseButton.module.scss';
 

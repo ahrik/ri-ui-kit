@@ -1,0 +1,16 @@
+[data-theme='light'] {
+  --accent: #0077ff;
+  --font-primary: #141414;
+  --font-secondary: #76787a;
+  --bg: #ebf0f5;
+  --danger: #ff2200;
+  --island-and-input: #ffffff;
+  --stroke: #c4c8cc;
+  --disabled: #d7dbe0;
+  --default-white-color: #ffffff;
+  --waiting-text-color: #fca523;
+  --accent-blue: #0077ff;
+  --green-success-color: #00cc52;
+  --strokeRgba: rgba(196, 200, 204, 0.8);
+  --overlay-maintaince: rgba(255, 255, 255, 0.8);
+}

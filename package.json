@@ -5,8 +5,22 @@
   "main": "dist/ri-ui-kit.umd.js",
   "module": "dist/ri-ui-kit.es.js",
   "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/ri-ui-kit.es.js",
+      "require": "./dist/ri-ui-kit.umd.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./styles": {
+      "import": "./dist/ri-ui-kit.css"
+    }
+  },
+  "files": [
+    "dist",
+    "dist/ri-ui-kit.css"
+  ],
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && cp -R src/styles dist/styles",
     "dev": "vite",
     "lint": "eslint .",
     "lint:fix": "eslint src --fix && npm run format",
@@ -77,17 +91,12 @@
   },
   "peerDependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "clsx": "^2.1.1"
   },
-  "files": [
-    "dist"
-  ],
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
     ]
-  },
-  "dependencies": {
-    "clsx": "^2.1.1"
   }
 }

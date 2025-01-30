@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import { BaseButton } from './BaseButton';
+import { BaseButton } from './base-button/BaseButton';
 
 export default {
-  title: 'UI/Button',
+  title: 'Buttons/BaseButton',
   component: BaseButton,
   argTypes: {
     label: { control: 'text' },

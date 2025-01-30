@@ -1,0 +1,9 @@
+.iconButton {
+  &:disabled {
+    color: var(--disabled);
+  }
+
+  &Primary:not(&:disabled) {
+    color: var(--accent);
+  }
+}

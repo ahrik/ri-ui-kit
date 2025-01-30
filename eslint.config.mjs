@@ -1,7 +1,6 @@
 import js from '@eslint/js';
 import tsParser from '@typescript-eslint/parser';
 import importPlugin from 'eslint-plugin-import';
-import jestPlugin from 'eslint-plugin-jest';
 import jsdocPlugin from 'eslint-plugin-jsdoc';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import eslintPrettier from 'eslint-plugin-prettier';
@@ -25,7 +24,6 @@ export default tsEslint.config(
       'react-refresh': eslintReactRefresh,
       'simple-import-sort': simpleImportSort,
       import: importPlugin,
-      jest: jestPlugin,
       jsdoc: jsdocPlugin,
       prettier: eslintPrettier,
       react: eslintReact,

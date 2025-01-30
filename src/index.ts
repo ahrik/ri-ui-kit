@@ -1,1 +1,5 @@
-export { Button } from './components/button/Button';
+import './styles/theme.css';
+
+export { BaseButton as Button } from './components/button/base-button/BaseButton';
+export { IconButton } from './components/button/icon-button/IconButton';
+export { PrimaryButton } from './components/button/primary-button/PrimaryButton';

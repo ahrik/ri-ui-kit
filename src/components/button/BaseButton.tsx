@@ -1,11 +1,8 @@
 import { ButtonHTMLAttributes, CSSProperties, PropsWithChildren } from 'react';
-import classNames from 'classnames';
-import classNamesBind from 'classnames/bind';
-import { BUTTON_SIZES, ButtonSize } from '../types';
+import { BUTTON_SIZES, ButtonSize } from './types';
+import clsx from 'clsx';
 
 import styles from './baseButton.module.scss';
-
-const cx = classNamesBind.bind(styles);
 
 export type BaseButtonProps = PropsWithChildren &
   ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -19,7 +16,7 @@ export const BaseButton = ({ children, size = 'medium', className, style, ...res
   };
 
   return (
-    <button className={classNames(cx('baseButton'), className)} style={style || buttonStyles} {...restProps}>
+    <button className={clsx(styles.baseButton, className)} style={style || buttonStyles} {...restProps}>
       {children}
     </button>
   );

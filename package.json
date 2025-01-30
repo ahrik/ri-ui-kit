@@ -1,6 +1,6 @@
 {
   "name": "ri-ui-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ri custom UI Kit",
   "main": "dist/ri-ui-kit.umd.js",
   "module": "dist/ri-ui-kit.es.js",
@@ -64,8 +64,8 @@
     "vite-plugin-svgr": "^4.3.0"
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "files": [
     "dist"
